@@ -9,7 +9,6 @@ export async function checkBudget(unit,benefitType,month){
         .eq('month',month)
     }
     catch(err){
-        const err = new Error("internal server error")
         throw(err)
     }
 }
@@ -22,7 +21,6 @@ export async function createRepoBudget(unit,benefitType,month,allocatedAmount){
             .select()
     }
     catch(err){
-        const err = new Error("internal server error")
         throw(err)
     }
 }

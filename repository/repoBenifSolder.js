@@ -8,7 +8,6 @@ export async function checkSoliderBenifRepo(soldierId){
     
     }
     catch(err){
-        const err = new Error("internal server error")
         throw(err)
     }
 }
@@ -21,7 +20,6 @@ export async function createBenefSoldierRepo(soldierId,unit,currentBenefitType,B
     
     }
     catch(err){
-        const err = new Error("internal server error")
         throw(err)
     }
 }
@@ -34,7 +32,6 @@ export async function updateCurrentBenefit(benefitType,soldierId){
         .eq('soldierId',soldierId)
     }
     catch(err){
-        const err = new Error("internal server error")
         throw(err)
     }
 }
@@ -49,7 +46,6 @@ export async function getHistoryRepo(soldierId){
      
     }
     catch(err){
-        const err = new Error("internal server error")
         throw(err)
     }
 }
@@ -62,7 +58,6 @@ export async function updateHistory(getHistory,soldierId){
         .eq('soldierId',soldierId)
     }
     catch(err){
-        const err = new Error("internal server error")
         throw(err)
     }
 }

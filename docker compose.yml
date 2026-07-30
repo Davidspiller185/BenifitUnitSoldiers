@@ -1,0 +1,17 @@
+services:
+  app:
+    image: node:24-alpine
+    build: .
+    working_dir: /app
+    ports: 
+      - "3000:3000"
+    environment:
+      SUPABASE_URL:
+      SUPABASE_SECRET_KEYS:
+    volumes:
+      - .:/app
+      - /app/node_modules
+    
+
+
+

@@ -1,5 +1,5 @@
 import router from "./router/router.js";
-import {dotenv} from "dotenv/config"
+import "dotenv/config"
 import supabase from "./db/database.js";
 import express from "express"
 
