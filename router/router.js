@@ -11,11 +11,6 @@ router.patch("/soldiers/:soldierId/benefits",patchSoldierBenefit)
 
 router.post("/budget",createBudget)
 
-router.get("/budget")
-
-router.get("/budget/:id/transactions")
-
-router.post("/budget/:id/spend")
 
 export default router
 
